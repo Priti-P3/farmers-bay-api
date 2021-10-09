@@ -1,20 +1,27 @@
-package com.p3.farmersbay.farmersbayapi.models;
+package com.p3.farmersbay.farmersbayapi.model;
 
+import java.io.Serializable;
+import java.util.List;
+
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 
 @Entity
-public class Category {
-    @Id
+public class Category implements Serializable {
+	private static final long serialVersionUID = 1343434L;
+	@Id
     @GeneratedValue
-    private long id;
+    private long categoryId;
     private String categoryName;
     private String description;
     private boolean enabled;
     private String iconPath;
 
-    public Category() {
+	public Category() {
     }
 
     public Category(String categoryName, String description, boolean enabled, String iconPath) {
@@ -24,15 +31,15 @@ public class Category {
         this.iconPath = iconPath;
     }
 
-    public long getId() {
-        return id;
-    }
+    public long getCategoryId() {
+		return categoryId;
+	}
 
-    public void setId(long id) {
-        this.id = id;
-    }
+	public void setCategoryId(long categoryId) {
+		this.categoryId = categoryId;
+	}
 
-    public String getCategoryName() {
+	public String getCategoryName() {
         return categoryName;
     }
 

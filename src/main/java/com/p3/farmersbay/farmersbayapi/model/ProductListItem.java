@@ -1,7 +1,13 @@
-package com.p3.farmersbay.farmersbayapi.models;
+package com.p3.farmersbay.farmersbayapi.model;
 
-public class ProductListItem {
-    private long id;
+import java.io.Serializable;
+
+public class ProductListItem implements Serializable{
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 12312L;
+	private long id;
     private String productName;
     private String productShortDesc;
     private String productImage;

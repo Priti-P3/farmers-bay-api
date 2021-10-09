@@ -1,11 +1,14 @@
-package com.p3.farmersbay.farmersbayapi.models;
+package com.p3.farmersbay.farmersbayapi.model;
+
+import java.io.Serializable;
 
 import javax.persistence.*;
 
 @Entity
 @Table(name="Orders")
-public class Order {
-    @Id
+public class Order implements Serializable {
+	private static final long serialVersionUID = 132432423L;
+	@Id
     @GeneratedValue
     private long id;
     @OneToOne(cascade = CascadeType.ALL)

@@ -1,12 +1,15 @@
-package com.p3.farmersbay.farmersbayapi.models;
+package com.p3.farmersbay.farmersbayapi.model;
+
+import java.io.Serializable;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
 @Entity
-public class Article {
-    @Id
+public class Article implements Serializable {
+	private static final long serialVersionUID = 1678678L;
+	@Id
     @GeneratedValue
     private long articleId;
     private String title;
