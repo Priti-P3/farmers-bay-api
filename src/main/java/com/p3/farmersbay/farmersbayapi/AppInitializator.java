@@ -39,7 +39,7 @@ public class AppInitializator {
 		Product f1 = new Product();
 		f1.setProductName("Fertilizer 1");
 		f1.setAvailable(true);
-		f1.setProductImage("../../assets/products/f1.jpg");
+		f1.setProductImage("https://th.bing.com/th/id/OIP.9fOM3eCwaVC3T9bPaJMGNAHaIx?pid=ImgDet&rs=1");
 		f1.setCategory(category1);
 		f1.setEnabled(true);
 		f1.setPrice(250.00d);
@@ -53,7 +53,7 @@ public class AppInitializator {
 		Product f2 = new Product();
 		f2.setProductName("Fertilizer 2");
 		f2.setAvailable(true);
-		f2.setProductImage("../../assets/products/f2.jpg");
+		f2.setProductImage("https://th.bing.com/th/id/OIP.oYTdKAlsys7xc5By9ETGDwHaEh?pid=ImgDet&rs=1");
 		f2.setCategory(category1);
 		f2.setEnabled(true);
 		f2.setPrice(250.00d);
@@ -69,7 +69,7 @@ public class AppInitializator {
 		Product p1 = new Product();
 		p1.setProductName("Pesticide 1");
 		p1.setAvailable(true);
-		p1.setProductImage("../../assets/products/p1.jpg");
+		p1.setProductImage("https://th.bing.com/th/id/OIP.9fOM3eCwaVC3T9bPaJMGNAHaIx?pid=ImgDet&rs=1");
 		p1.setCategory(category2);
 		p1.setEnabled(true);
 		p1.setPrice(250.00d);
@@ -83,7 +83,7 @@ public class AppInitializator {
 		Product p2 = new Product();
 		p2.setProductName("Pesticide 2");
 		p2.setAvailable(true);
-		p2.setProductImage("../../assets/products/p2.jpg");
+		p2.setProductImage("https://th.bing.com/th/id/OIP.oYTdKAlsys7xc5By9ETGDwHaEh?pid=ImgDet&rs=1");
 		p2.setCategory(category2);
 		p2.setEnabled(true);
 		p2.setPrice(250.00d);
@@ -98,7 +98,8 @@ public class AppInitializator {
 		Product s1 = new Product();
 		s1.setProductName("Seeds 1");
 		s1.setAvailable(true);
-		s1.setProductImage("../../assets/products/s1.jpg");
+//		s1.setProductImage("../../assets/products/s1.jpg");
+		s1.setProductImage("https://th.bing.com/th/id/OIP.9fOM3eCwaVC3T9bPaJMGNAHaIx?pid=ImgDet&rs=1");
 		s1.setCategory(category3);
 		s1.setEnabled(true);
 		s1.setPrice(250.00d);
@@ -110,9 +111,9 @@ public class AppInitializator {
 		productRepository.save(s1);
 		
 		Product s2 = new Product();
-		s2.setProductName("Seeds 1");
+		s2.setProductName("Seeds 2");
 		s2.setAvailable(true);
-		s2.setProductImage("../../assets/products/s2.jpg");
+		s2.setProductImage("https://th.bing.com/th/id/OIP.oYTdKAlsys7xc5By9ETGDwHaEh?pid=ImgDet&rs=1");
 		s2.setCategory(category3);
 		s2.setEnabled(true);
 		s2.setPrice(250.00d);
