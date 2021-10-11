@@ -9,8 +9,8 @@ import javax.persistence.*;
 public class Order implements Serializable {
 	private static final long serialVersionUID = 132432423L;
 	@Id
-    @GeneratedValue
-    private long id;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private long orderId;
     @OneToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "product_id", referencedColumnName = "productId")
     private Product product;
@@ -19,15 +19,15 @@ public class Order implements Serializable {
     private String orderStatus;
     private String deliveryAddress;
 
-    public long getId() {
-        return id;
-    }
+    public long getOrderId() {
+		return orderId;
+	}
 
-    public void setId(long id) {
-        this.id = id;
-    }
+	public void setOrderId(long orderId) {
+		this.orderId = orderId;
+	}
 
-    public Product getProduct() {
+	public Product getProduct() {
         return product;
     }
 

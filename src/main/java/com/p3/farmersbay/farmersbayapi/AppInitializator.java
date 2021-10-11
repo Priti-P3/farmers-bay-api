@@ -37,13 +37,13 @@ public class AppInitializator {
 		// *****Products data*****
 		// Fertilizers data
 		Product f1 = new Product();
-		f1.setProductName("Fertilizer 1");
+		f1.setProductName("Organic Super Growth ");
 		f1.setAvailable(true);
 		f1.setProductImage("https://th.bing.com/th/id/OIP.9fOM3eCwaVC3T9bPaJMGNAHaIx?pid=ImgDet&rs=1");
 		f1.setCategory(category1);
 		f1.setEnabled(true);
 		f1.setPrice(250.00d);
-		f1.setProductShortDesc("Fertilizer 1 desc");
+		f1.setProductShortDesc("Katek Naturally Organic Super Growth Fertilizer Pallets, For all Vegetables");
 		f1.setQuantity(1);
 		f1.setWeight(10.00d);
 		f1.setUnit("Kg");
@@ -99,7 +99,7 @@ public class AppInitializator {
 		s1.setProductName("Seeds 1");
 		s1.setAvailable(true);
 //		s1.setProductImage("../../assets/products/s1.jpg");
-		s1.setProductImage("https://th.bing.com/th/id/OIP.9fOM3eCwaVC3T9bPaJMGNAHaIx?pid=ImgDet&rs=1");
+		s1.setProductImage("../../assets/products/s1.jpg");
 		s1.setCategory(category3);
 		s1.setEnabled(true);
 		s1.setPrice(250.00d);
